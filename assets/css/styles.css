@@ -33,6 +33,19 @@ h1, h2, h3, h4, h5, h6, p, i, a {
   padding: 32px;
   overflow: hidden;
   flex-direction: row-reverse;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .image-container {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .image-container {
+    visibility: hidden;
+  }
 }
 
 /* First Section/ Information Section */
@@ -81,6 +94,11 @@ h1, h2, h3, h4, h5, h6, p, i, a {
 }
 
 @media only screen and (max-width: 600px) {
+  .info-container .input-box {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 800px) {
   .info-container .input-box {
     visibility: hidden;
   }
@@ -158,6 +176,8 @@ h1, h2, h3, h4, h5, h6, p, i, a {
 @media only screen and (max-width: 600px) {
   .second-section {
     width: 100%;
+    padding: 0px;
+    margin: 0px;
   }
 }
 

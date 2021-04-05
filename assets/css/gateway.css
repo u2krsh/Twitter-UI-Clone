@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  text-align: left;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+.container a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container a:hover {
+  text-decoration: underline;
+  color: skyblue;
+}
+
+.b1 {
+  color: white;
+  background: #1DA1F2;
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+  border-radius: 38px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  width: 80px;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.b1 a {
+  color: white;
+}
+
+.b1 a:hover {
+  text-decoration: none;
+}
+
+.b2 a {
+  color: #1da1f2;
+}
+
+.b2 a:hover {
+  text-decoration: none;
+}
+
+.b2 {
+  color: #1DA1F2;
+  background: transparent;
+  border: 1px solid #1da1f2;
+  border-radius: 38px;
+  color: #1da1f2;
+  font-size: 14px;
+  line-height: 20px;
+  width: 80px;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.b1:hover {
+  background-color: rgb(29, 161, 242, 0.9);
+}
+
+.b2:hover {
+  background-color: rgb(29, 161, 242, 0.1);
+}
