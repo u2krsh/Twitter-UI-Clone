@@ -1,0 +1,163 @@
+html {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  color: white;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, i, a {
+  color: white;
+}
+
+.image-container {
+  background-image: image(assets/img/background.png);
+  float: left;
+  width: 55%;
+  height: 90%;
+}
+
+.image-container .logoincont {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 243px;
+  height: auto;
+}
+
+/* First Section/ Information Section */
+.info-container {
+  float: right;
+  padding: 16px 16px;
+  width: 45%;
+  height: 90%;
+}
+
+.info-container .input-box {
+  padding: 0px 32px;
+}
+
+.info-container .input-box input {
+  background: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .info-container {
+    width: 100%;
+  }
+}
+
+/* Second Section */
+.second-section {
+  padding: 20px 20px;
+}
+
+.second-section .second-image {
+  width: 50px;
+  height: auto;
+  padding-bottom: 12px;
+}
+
+.second-section h2 {
+  font-family: verdana;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  line-height: 84px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.second-section h5 {
+  height: auto;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  font-family: verdana;
+  margin-bottom: 32px;
+}
+
+.second-section button {
+  display: block;
+  min-width: 380px;
+  min-height: 45px;
+  margin-bottom: 16px;
+  border-radius: 38px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.second-section button:active,
+.second-section button:focus,
+.second-section button:hover {
+  text-decoration: none;
+}
+
+.second-section .signup {
+  color: white;
+  background: #1DA1F2;
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+
+.second-section .login {
+  color: #1DA1F2;
+  background: transparent;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+
+.second-section .login:hover {
+  background-color: transparent;
+  color: #1da1f2;
+}
+
+/* Footer Section */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: grey;
+  padding: 12px 16px;
+  text-align: center;
+  align-items: stretch;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    left: 0;
+    bottom: 0;
+  }
+}
+
+footer .menu a {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  text-decoration: none;
+  margin: 4px 0px;
+  padding-right: 16px;
+}
+
+footer .menu p {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  display: inline;
+}
+
+footer .menu a:hover {
+  text-decoration: underline;
+}
