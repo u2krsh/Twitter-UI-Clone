@@ -17,18 +17,22 @@ h1, h2, h3, h4, h5, h6, p, i, a {
 }
 
 .image-container {
-  background-image: image(assets/img/background.png);
   float: left;
   width: 55%;
   height: 90%;
 }
 
-.image-container .logoincont {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 243px;
-  height: auto;
+.image-container .image-section {
+  -webkit-box-pack: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 170px;
+  left: 0;
+  width: 55%;
+  padding: 32px;
+  overflow: hidden;
+  flex-direction: row-reverse;
 }
 
 /* First Section/ Information Section */
@@ -47,9 +51,38 @@ h1, h2, h3, h4, h5, h6, p, i, a {
   background: transparent;
 }
 
+.info-container .input-box .top-button {
+  color: #1da1f2;
+  background: transparent;
+  border: 1px solid #1da1f2;
+  border-radius: 38px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.info-container .input-box .top-button:hover {
+  background-color: rgb(29, 161, 242, 0.1);
+}
+
+.info-container .input-box .input {
+  display: inline;
+  outline: none;
+  font-family: verdana;
+  border-radius: 4px;
+  border: .5px solid grey;
+  color: white;
+  width: 180px;
+  height: 40px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
 @media only screen and (max-width: 600px) {
-  .info-container {
-    width: 100%;
+  .info-container .input-box {
+    visibility: hidden;
   }
 }
 
@@ -93,12 +126,6 @@ h1, h2, h3, h4, h5, h6, p, i, a {
   font-weight: 700;
 }
 
-.second-section button:active,
-.second-section button:focus,
-.second-section button:hover {
-  text-decoration: none;
-}
-
 .second-section .signup {
   color: white;
   background: #1DA1F2;
@@ -120,9 +147,18 @@ h1, h2, h3, h4, h5, h6, p, i, a {
   padding: 6px 16px;
 }
 
+.second-section .signup:hover {
+  background-color: rgb(29, 161, 242, 0.9);
+}
+
 .second-section .login:hover {
-  background-color: transparent;
-  color: #1da1f2;
+  background-color: rgb(29, 161, 242, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .second-section {
+    width: 100%;
+  }
 }
 
 /* Footer Section */
